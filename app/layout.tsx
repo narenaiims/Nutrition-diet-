@@ -1,11 +1,8 @@
-
 import React from "react";
 import type { Metadata, Viewport } from "next";
 import { Plus_Jakarta_Sans, Noto_Sans_Devanagari } from "next/font/google";
 import "./globals.css";
-import { LanguageProvider } from "../context/LanguageContext";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import ClientProviders from "../components/ClientProviders";
 import { DOCTOR_INFO } from "../lib/constants";
 
 const plusJakarta = Plus_Jakarta_Sans({ 
@@ -41,7 +38,11 @@ export const viewport: Viewport = {
   viewportFit: "cover"
 };
 
-// Added React import to satisfy TypeScript namespace requirement for React.ReactNode
+/**
+ * Root Layout is a Server Component.
+ * It strictly handles metadata, fonts, and the high-level HTML structure.
+ * Interactivity is offloaded to the ClientProviders component.
+ */
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -50,15 +51,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={`${plusJakarta.variable} ${notoDevanagari.variable} font-sans antialiased bg-slate-50 text-slate-900`}>
-        <LanguageProvider>
-          <div className="min-h-screen flex flex-col">
-            <Header />
-            <main className="flex-grow">
-              {children}
-            </main>
-            <Footer />
-          </div>
-        </LanguageProvider>
+        <ClientProviders>
+          {children}
+        </ClientProviders>
       </body>
     </html>
   );
