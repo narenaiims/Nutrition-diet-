@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Oncology Nutrition Udaipur | Dr. Narendra Rathore</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Expert cancer nutrition and supportive care by Dr. Narendra Rathore. Evidence-based diet guidance for chemotherapy and radiation in Udaipur.">
+    <meta name="keywords" content="Oncology Nutrition, Cancer Diet, Dr. Narendra Rathore, Oncologist Udaipur, Cancer Support Udaipur, Cancer Recovery Nutrition">
+    <meta name="author" content="Dr. Narendra Rathore">
+    <link rel="canonical" href="https://www.drnroncologistudaipur.com">
+    
+    <!-- PWA / Mobile -->
+    <meta name="theme-color" content="#2563eb">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="https://ui-avatars.com/api/?name=NR&background=2563eb&color=fff&size=180">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slate: {
+                            50: '#f8fafc',
+                            900: '#0f172a',
+                        },
+                        blue: {
+                            50: '#f0f7ff',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                        },
+                        indigo: {
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                        }
+                    },
+                    borderRadius: {
+                        '3xl': '1.5rem',
+                        '4xl': '2rem',
+                        '5xl': '3rem',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', 'Noto Sans Devanagari', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            scroll-behavior: smooth;
+            overscroll-behavior-y: contain;
+            background: radial-gradient(circle at top right, #f0f9ff 0%, #ffffff 40%),
+                        radial-gradient(circle at bottom left, #fdf4ff 0%, #ffffff 40%);
+            background-attachment: fixed;
+            padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(16px) saturate(180%);
+            -webkit-backdrop-filter: blur(16px) saturate(180%);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        @keyframes subtle-float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+        .animate-subtle-float {
+            animation: subtle-float 5s ease-in-out infinite;
+        }
+        /* Hide scrollbar but keep functionality */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        button, a {
+            -webkit-tap-highlight-color: transparent;
+        }
+        .section-transition {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        /* Mobile specific adjustments */
+        @media (max-width: 640px) {
+            h1 { line-height: 1.2 !important; }
+            .glass-card { backdrop-filter: blur(8px) saturate(150%); }
+        }
+    </style>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      "name": "Oncology Nutrition Udaipur",
+      "description": "Evidence-based nutritional and supportive care guidance for cancer patients under Dr. Narendra Rathore.",
+      "author": {
+        "@type": "Physician",
+        "name": "Dr. Narendra Rathore",
+        "medicalSpecialty": "Oncology",
+        "jobTitle": "Professor & Head",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "D-30, Inside MB Hospital Campus",
+          "addressLocality": "Udaipur",
+          "addressRegion": "Rajasthan",
+          "postalCode": "313001",
+          "addressCountry": "IN"
+        },
+        "telephone": "7597207640",
+        "url": "https://www.drnroncologistudaipur.com"
+      }
+    }
+    </script>
+
+    <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.38.0",
+    "next": "https://esm.sh/next@^16.1.4",
+    "next/": "https://esm.sh/next@^16.1.4/"
+  }
+}
+</script>
+</head>
+<body class="antialiased bg-slate-50 text-slate-900">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+</body>
+</html>
