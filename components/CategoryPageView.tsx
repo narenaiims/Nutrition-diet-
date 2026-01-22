@@ -1,3 +1,5 @@
+"use client";
+
 import React from 'react';
 import { Language, NavCard, ViewType } from '../types';
 import Breadcrumbs from './Breadcrumbs';

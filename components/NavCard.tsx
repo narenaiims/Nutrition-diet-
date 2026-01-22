@@ -1,3 +1,4 @@
+"use client";
 
 import React from 'react';
 import { NavCard as NavCardType } from '../types';

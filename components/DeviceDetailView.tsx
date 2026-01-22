@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from 'react';
 import { DeviceCare, Language, RelatedLink } from '../types';
 import { DOCTOR_INFO } from '../constants';
